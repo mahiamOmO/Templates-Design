@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xs: "400px",
+                    sm: "600px",
+                    md: "760px",
+                    lg: "1024px",
+                    xl: "1280px",
+                    "2xl": "1536px",
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Noto Sans",sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-between px-3 bg-gray-400 h-[70px] items-center text-white font-medium">
+        <div class="text-lg font-bold"><span class="text-red-700">COLO</span> APP</div>
+        <ul class="menu flex justify-end items-center gap-4">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div
+        class="contain flex md:w-[100%] mx-auto justify-center items-center flex-col md: flex-row my-[200px] gap-[50px]">
+        <div class="container_body flex flex-col gap-[20px] md: w-[60%] w-[80%]">
+            <h2 class="text-3xl font-bold">Its Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.saepe enim? tempore dolore ab natus sequi, atque
+                totam quaerat minus tempora, earum laboriosam distinctio itaque? Culpa aperiam quis excepturi laudantium
+                sunt consequatur non qui illum incidunt maxime. Sit corporis quibusdam recusandae saepe sequi totam
+                deleniti eveniet mollitia provident voluptas quis necessitatibus repellendus, esse eius soluta rem in
+                ducimus placeat? Incidunt eaque autem, voluptatibus, dolorem dolorum vero porro consequuntur esse fuga
+                quibusdam tempora sequi maxime expedita repellendus, ex molestias assumenda laborum nobis voluptas
+                doloremque minus nihil. Praesentium illo animi ut deleniti recusandae at blanditiis consectetur cumque
+                dolore? Incidunt harum officia beatae non? Tempore, reiciendis?</p>
+        </div>
+        <img class="rounded-md" src="pic1.jpg" alt="" class="rounded-md">
+    </div>
+    <div class="cards flex flex-wrap w-[90%] md:w-[80%] mx-auto gap-[30px] justify-center">
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+        <div class="rounded-md cards_body shadow-lg md:w-[30%] p-4 w-[300px]">
+            <img class="rounded-md" src="pic2.jpg" alt="">
+            <h4 class="text-2xl font-bold flex flex-col items-center">Cards Heading</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quo.</p>
+        </div>
+    </div>
+    <footer class="text-center my-[50px]">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <p class="text-xl font-semibold">@All Rights Reserved </p>
+    </footer>
+</body>
+</html>
