@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-green-300 flex justify-between items-center p-4">
+        <img src="images/meta_brains_logo.jpeg" alt="Meta Brains Logo" class="h-12"/>
+        <ul class="flex space-x-10 text-lg">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Pages</li>
+            <li class="cursor-pointer">About Us</li>
+            <li class="cursor-pointer">Privacy Policy</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+    </nav>
+
+    <!-- Landing Page Section -->
+    <section class="flex flex-row bg-white p-10 items-center space-x-8">
+        <!-- Left Side Content -->
+        <div class="flex flex-col space-y-5 w-1/2">
+            <h1 class="text-6xl font-bold">Meta Brains</h1>
+            <p class="text-lg">
+                At Meta Brains, we specialize in harnessing the power of artificial intelligence and cutting-edge digital technologies to transform businesses. Our expert team is dedicated to developing innovative solutions that drive growth, enhance efficiency, and deliver exceptional user experiences.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-green-300 py-2 px-5 text-white hover:bg-slate-900 rounded-2xl">Buy</button>
+                <button class="bg-green-300 py-2 px-5 text-white hover:bg-red-900 rounded-2xl">Click For More</button>
+            </div>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="w-1/2 flex justify-end">
+            <img src="images/img.jpeg" alt="Illustration" class="w-3/4"/>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-green-300 text-black py-10">
+        <div class="container mx-auto px-10">
+            <div class="flex justify-between">
+                <!-- About Section -->
+                <div class="w-1/3">
+                    <h2 class="text-2xl font-bold mb-4">About Us</h2>
+                    <p>
+                        We are a leading company in delivering high-quality products and services to our customers. Our mission is to bring innovation and quality together.
+                    </p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="w-1/3">
+                    <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">Pages</a></li>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="w-1/3">
+                    <h2 class="text-2xl font-bold mb-4">Follow Us</h2>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-400">
+                            <img src="images/facebook-icon.png" alt="Facebook" class="h-8 w-8"/>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <img src="images/twitter-icon.png" alt="Twitter" class="h-8 w-8"/>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <img src="images/instagram-icon.png" alt="Instagram" class="h-8 w-8"/>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <img src="images/linkedin-icon.png" alt="LinkedIn" class="h-8 w-8"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                &copy; 2024 Meta Brains. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
