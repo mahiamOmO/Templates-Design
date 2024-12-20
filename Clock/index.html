@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="time">
+        <div class="circle" style="--clr:#ff2972;">
+            <svg viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="70" class="background"></circle>
+                <circle cx="70" cy="70" r="70" class="foreground"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr:#29ff72;">
+            <svg viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="70" class="background"></circle>
+                <circle cx="70" cy="70" r="70" class="foreground"></circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr:#2972ff;">
+            <svg viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="70" class="background"></circle>
+                <circle cx="70" cy="70" r="70" class="foreground"></circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const hoursElement = document.getElementById("hours");
+            const minutesElement = document.getElementById("minutes");
+            const secondsElement = document.getElementById("seconds");
+            const ampmElement = document.getElementById("ampm");
+
+            const now = new Date();
+            let h = now.getHours();
+            let m = now.getMinutes();
+            let s = now.getSeconds();
+            const am_pm = h >= 12 ? "PM" : "AM";
+
+            // Convert 24-hour clock to 12-hour clock
+            if (h > 12) h = h - 12;
+            if (h === 0) h = 12;
+
+            // Add zero before single digit numbers
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+
+            // Update HTML elements
+            hoursElement.innerHTML = h;
+            minutesElement.innerHTML = m;
+            secondsElement.innerHTML = s;
+            ampmElement.innerHTML = am_pm;
+
+            // Update SVG circle stroke-dashoffset
+            const hourProgress = 440 - (440 * h) / 12;
+            const minuteProgress = 440 - (440 * m) / 60;
+            const secondProgress = 440 - (440 * s) / 60;
+
+            document.querySelector('.circle:nth-child(1) .foreground').style.strokeDashoffset = hourProgress;
+            document.querySelector('.circle:nth-child(2) .foreground').style.strokeDashoffset = minuteProgress;
+            document.querySelector('.circle:nth-child(3) .foreground').style.strokeDashoffset = secondProgress;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();  // Initial call to display the time immediately
+    </script>
+</body>
+</html>

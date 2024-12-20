@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+
+#time {
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+
+.circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); /* Rotate the SVG to start from the top */
+}
+
+.background {
+    fill: none;
+    stroke: #333;
+    stroke-width: 10;
+}
+
+.foreground {
+    fill: none;
+    stroke: var(--clr, #ff2972); /* Use the --clr variable for dynamic color */
+    stroke-width: 10;
+    stroke-dasharray: 440; /* Total length of the circle */
+    stroke-dashoffset: 440; /* Initially hidden */
+    transition: stroke-dashoffset 1s linear; /* Smooth transition for the progress */
+}
+
+#time div {
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.ap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    transform: translateX(-20px);
+}
