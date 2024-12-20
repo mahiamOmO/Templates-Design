@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #221f36;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 100px;
+    background-color: #3b2a7d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    margin: 0px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #a1a1a1;
+}
+
+.hero {
+    height: 90vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .hero-content {
+    width: 50%;
+    color: #fff;
+}
+
+.hero .hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+    font-size: 20px; /* Adjusted font size */
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #a1a1a1;
+}
+
+.hero .hero-content button {
+    background-color: #3b2a7d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero .hero-content button:hover {
+    background-color: #782536;
+}
+
+.hero .hero-image {
+    width: 380px; /* Fixed width */
+    height: 380px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hero .hero-image::before {
+    content: '';
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -25px;
+    right: 10px;
+    z-index: -1;
+}
+
+.hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional */
+}
+
+.hero .hero-image img:hover {
+    transform: translateY(-5px);
+}
