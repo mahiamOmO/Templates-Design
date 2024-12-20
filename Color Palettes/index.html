@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palettes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="kingcode.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" style="--clr: #e75a3c;">
+            <span class="color"></span>
+            <span class="text"></span>
+        </div>
+        <div class="item" style="--clr: #ffb200;">
+            <span class="color"></span>
+            <span class="text"></span>
+        </div>
+        <div class="item" style="--clr: #399918;">
+            <span class="color"></span>
+            <span class="text"></span>
+        </div>
+        <div class="item" style="--clr: #921a40;">
+            <span class="color"></span>
+            <span class="text"></span>
+        </div>
+        <div class="item" style="--clr: #49a1ec;">
+            <span class="color"></span>
+            <span class="text"></span>
+        </div>
+    </div>
+
+    <input type="text" placeholder="center your code">
+
+    <script>
+        function copyText() {
+            let texts = document.querySelectorAll('.text');
+            texts.forEach((text) => {
+                let value = text.parentNode.style.getPropertyValue('--clr');
+                text.innerText = value;
+
+                text.addEventListener('click', () => {
+                    text.classList.add('active');
+                    setTimeout(() => {
+                        text.classList.remove('active');
+                    }, 500);
+
+                    navigator.clipboard.writeText(value).then(() => {
+                        text.innerText = 'Copied!';
+                        setTimeout(() => {
+                            text.innerText = value;
+                        }, 1000);
+                    }).catch(err => {
+                        console.error('Could not copy text: ', err);
+                    });
+
+                    document.body.style.backgroundColor = value;
+                });
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', copyText);
+    </script>
+</body>
+
+</html>
