@@ -20,17 +20,34 @@ Welcome to the **Template Design Repository**! This project contains **20+ uniqu
 
 ## 🗂️ Templates Overview
 
-| 📂 **Template Name** | 📝 **Description**               | 🛠️ **Technologies Used** |
-|-----------------------|----------------------------------|--------------------------|
-| 🌐 Template 1         | Business Landing Page           | HTML, CSS, Bootstrap     |
-| 🎨 Template 2         | Personal Portfolio              | HTML, CSS, Tailwind CSS  |
-| 🛒 Template 3         | E-Commerce Home Page            | HTML, CSS, JavaScript    |
-| 📰 Template 4         | Blog Page                       | HTML, CSS, Python        |
-| 🏢 Template 5         | Agency Website                  | HTML, CSS, Bootstrap     |
-| 🖼️ Template 6         | Product Showcase                | HTML, CSS, Tailwind CSS  |
-| ...                   | ...                              | ...                      |
+This repository contains a diverse collection of templates and projects developed using various technologies. Below is an overview of the available templates:
+
+| 🌟 **Template Name**            | 📝 **Description**                                     | 🛠️ **Technologies Used**        |
+|--------------------------------|---------------------------------------------------------|----------------------------------|
+| 🎨 **Animation Login Form**    | A stylish login form with animations                   | HTML, CSS, JavaScript            |
+| 📝 **Blog App Project**        | A dynamic blog application                             | HTML, CSS, JavaScript, Python    |
+| 📰 **Blog Website**            | A responsive blog website layout                       | HTML, CSS, JavaScript            |
+| 📚 **Book Store**              | An online bookstore template                           | HTML, CSS, JavaScript            |
+| ⏰ **Clock**                   | A digital clock interface                              | HTML, CSS, JavaScript            |
+| 🎨 **Color Palettes**          | A collection of color palette designs                  | HTML, CSS                        |
+| 📊 **Dashboard**               | An admin dashboard interface                           | HTML, CSS, JavaScript            |
+| 🎲 **Ludo Game**               | A web-based Ludo game                                  | HTML, CSS, JavaScript            |
+| 🥤 **Pepsi Website**           | A promotional website for Pepsi                        | HTML, CSS, JavaScript            |
+| 🌐 **Portfolio Landing Page**  | A landing page for personal portfolios                 | HTML, CSS, JavaScript            |
+| 💼 **Portfolio Website**       | A complete personal portfolio website                  | HTML, CSS, JavaScript            |
+| 🖼️ **Profile Card**            | A customizable profile card component                  | HTML, CSS                        |
+| 💻 **Responsive Website Bootstrap** | A responsive website template using Bootstrap       | HTML, CSS, Bootstrap             |
+| 📱 **Responsive Website**      | A responsive website layout                            | HTML, CSS, JavaScript            |
+| ⌨️ **Typing Effect Project**   | A text typing animation effect                         | HTML, CSS, JavaScript            |
+| 🚀 **Landing Page**            | A generic landing page template                        | HTML, CSS, JavaScript            |
+| 🎨 **Portfolio-2**             | An alternative design for a personal portfolio         | HTML, CSS, JavaScript            |
+| 🐍 **Python Project**          | A project implemented using Python                     | Python                           |
+| 🧪 **Template Practice**       | Practice templates for honing design skills            | HTML, CSS, JavaScript            |
 
 ---
+
+Feel free to explore these templates and utilize them in your projects. Contributions and suggestions are welcome!
+
 
 ## ⚙️ Installation
 
