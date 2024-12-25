@@ -18,7 +18,7 @@ Welcome to the **Template Design Repository**! This project contains **20+ uniqu
 
 ---
 
-             ## 🗂️ Templates Overview
+ ## 🗂️ Templates Overview
 
 This repository contains a diverse collection of templates and projects developed using various technologies. Below is an overview of the available templates:
 
